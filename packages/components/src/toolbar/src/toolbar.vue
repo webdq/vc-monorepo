@@ -331,6 +331,8 @@ import { useZoom } from './hooks/use-zoom'
 import { useSceneMode } from './hooks/use-scene-mode'
 import { useMapSetting } from './hooks/use-map-setting'
 
+const ASelectOption = ASelect.Option
+
 defineOptions({
   name: 'VcToolbar'
 })

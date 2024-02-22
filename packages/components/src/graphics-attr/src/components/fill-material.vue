@@ -369,6 +369,7 @@ import {
 import ColorPicker from './color-picker.vue'
 import { fillTypeOptions } from '../hooks/use-select-options'
 
+const ASelectOption = ASelect.Option
 const AFormItem = AForm.Item
 
 const emit = defineEmits(['update:data', 'change'])

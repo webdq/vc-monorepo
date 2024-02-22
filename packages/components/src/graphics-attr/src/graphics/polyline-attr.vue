@@ -239,6 +239,8 @@ import ColorPicker from '../components/color-picker.vue'
 import { polylineTypeOptions } from '../hooks/use-select-options'
 import { useAttrsChange } from '../hooks/use-attrs-change'
 
+const ASelectOption = ASelect.Option
+
 const emit = defineEmits(['updateAttr'])
 
 const props = defineProps({

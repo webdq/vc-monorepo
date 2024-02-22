@@ -314,6 +314,8 @@ import {
 import { useAttrsChange } from '../hooks/use-attrs-change'
 import { MarkIconImage } from '../graphics-attr'
 
+const ASelectOption = ASelect.Option
+
 const emit = defineEmits(['updateAttr'])
 
 const props = defineProps({
