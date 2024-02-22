@@ -1,0 +1,132 @@
+.graphics-form {
+  --label-color: #333;
+  --label-bg-color: #f0f0f0;
+  --border-color: #ccc;
+  border: 1px solid var(--border-color);
+  .icon-image-row {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-select {
+    width: 100%;
+  }
+  .form-date-picker {
+    width: 100%;
+  }
+  .ae-btn-wrapper {
+    margin-left: auto;
+  }
+  .ae-type-wrapper {
+    display: flex;
+    align-items: center;
+    .ae-type-label {
+      color: var(--label-color);
+      padding-right: 10px;
+      flex: 0 0 90px;
+    }
+    .ae-type-select {
+      flex: auto;
+    }
+  }
+  .ae-pos-list {
+    .ae-pos-row {
+      display: flex;
+      & + .ae-pos-row {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: 1px dashed var(--border-color);
+      }
+      .ae-pos-name {
+        flex: 0 0 80px;
+        text-align: right;
+        color: var(--label-color);
+      }
+      .ae-pos-group {
+        flex: 1;
+        .ae-pos-item {
+          padding: 0 5px;
+        }
+      }
+      .ae-pos-action {
+        flex: none;
+        padding-left: 5px;
+      }
+    }
+  }
+  .ae-end-date {
+    color: var(--label-color);
+  }
+  .entity-card {
+    cursor: pointer;
+    &.active {
+      border-color: var(--ant-primary-color);
+    }
+  }
+  .setting-group {
+    & + .setting-group {
+      border-top: 1px solid var(--border-color);
+    }
+    .setting-label {
+      padding: 8px 15px;
+      font-size: 14px;
+      color: var(--label-color);
+      border-bottom: 1px solid var(--border-color);
+      background-color: var(--label-bg-color);
+      display: flex;
+      justify-content: space-between;
+      .setting-label-action {
+        .ae-action-btn {
+          padding: 0;
+          margin: 0;
+          width: 30px;
+          height: 20px;
+        }
+      }
+    }
+    .setting-control {
+      padding: 15px;
+      .setting-grid {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .setting-grid-label {
+          flex: 0 0 80px;
+          padding-right: 10px;
+          color: var(--label-color);
+          text-align: right;
+        }
+        .setting-grid-control {
+          flex: 1;
+          min-height: 32px;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  :deep(.ant-form) {
+    .ant-form-item {
+      margin-bottom: 0;
+      & + .ant-form-item {
+        border-top: 1px solid var(--border-color);
+      }
+    }
+    .ant-form-item-label {
+      border-right: 1px solid var(--border-color);
+      padding: 4px;
+    }
+    .ant-form-item-label > label {
+      color: var(--label-color);
+      font-size: 12px;
+    }
+    .ant-form-item-control {
+      padding: 4px 10px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true,
+    "paths": {
+      // "@webdq/vc-draw-helper": ["../draw-helper/src"]
+    }
+  },
+  "include": ["./src", "Cesium.d.ts"],
+  "exclude": ["node_modules", "dist", "@webdq/vc-draw-helper"]
+}

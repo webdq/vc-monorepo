@@ -1,0 +1,26 @@
+export const CircleBlurType = 'CircleBlur'
+export const CircleDiffuseType = 'CircleDiffuse'
+export const CircleFadeType = 'CircleFade'
+export const CirclePulseType = 'CirclePulse'
+export const CircleScanType = 'CircleScan'
+export const CircleSpiralType = 'CircleSpiral'
+export const CircleVaryType = 'CircleVary'
+export const CircleWaveType = 'CircleWave'
+
+export const EllipsoidElectricType = 'EllipsoidElectric'
+export const EllipsoidTrailType = 'EllipsoidTrail'
+
+export const PolylineFlickerType = 'PolylineFlicker'
+export const PolylineFlowType = 'PolylineFlow'
+export const PolylineImageTrailType = 'PolylineImageTrail'
+export const PolylineLightingTrailType = 'PolylineLightingTrail'
+export const PolylineTrailType = 'PolylineTrail'
+
+export const RadarLineType = 'RadarLine'
+export const RadarScanType = 'RadarScan'
+export const RadarSweepType = 'RadarSweep'
+export const RadarWaveType = 'RadarWave'
+
+export const WallImageTrailType = 'WallImageTrail'
+export const WallLineTrailType = 'WallLineTrail'
+export const WallTrailType = 'WallTrail'

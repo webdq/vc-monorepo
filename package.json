@@ -1,0 +1,55 @@
+{
+  "name": "vc-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "vue cesium monorepo",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
+    "dev": "pnpm build && turbo dev --filter=./packages/* --filter=./play",
+    "build": "turbo build --filter=./packages/*",
+    "version": "changeset version",
+    "publish": "pnpm lint && pnpm build && changeset publish"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": [
+      "eslint --fix"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cesium": "1.113.0",
+    "vue": "^3.3.11",
+    "vue-cesium": "3.2.4"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "eslint-plugin-vue": "^9.19.2",
+    "husky": "^8.0.3",
+    "less": "^4.2.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "shx": "^0.3.4",
+    "turbo": "1.11.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.1",
+    "vite-plugin-dts": "^3.6.4",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-eslint-parser": "^9.4.2",
+    "vue-tsc": "^1.8.25"
+  }
+}

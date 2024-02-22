@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "./src",
+    "node_modules/vue-cesium/global.d.ts",
+    "node_modules/vue-cesium/Cesium.d.ts",
+    "node_modules/@webdq/vc-components/Cesium.d.ts",
+    "node_modules/@webdq/vc-materials/Cesium.d.ts"
+  ]
+}

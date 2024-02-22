@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "types": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "deploy": {
+      "dependsOn": ["build", "test", "lint"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "lint": {},
+    "dev": {
+      "cache": false
+    }
+  },
+  "globalDependencies": [
+    ".env",
+    "tsconfig.json",
+    ".eslintrc.js",
+    ".prettierrc.js"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@webdq/vc-draw-helper",
+  "version": "1.0.0",
+  "description": "cesium draw helper",
+  "main": "./dist/vc-draw-helper.js",
+  "module": "./dist/vc-draw-helper.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/vc-draw-helper.js",
+      "import": "./dist/vc-draw-helper.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "types": "vue-tsc --declaration --emitDeclarationOnly && tsc -p ./tsconfig.json",
+    "types:watch": "vue-tsc --declaration --emitDeclarationOnly --watch & tsc -p ./tsconfig.json --watch"
+  },
+  "dependencies": {
+    "@webdq/vc-materials": "workspace:*",
+    "dayjs": "^1.11.10",
+    "decimal.js": "^10.4.3",
+    "gl-matrix": "^3.4.3"
+  },
+  "keywords": [],
+  "author": "webdq",
+  "license": "MIT"
+}

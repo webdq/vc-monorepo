@@ -1,0 +1,34 @@
+{
+  "name": "@webdq/vc-materials",
+  "version": "1.0.0",
+  "description": "cesium materials",
+  "main": "./dist/vc-materials.js",
+  "module": "./dist/vc-materials.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/vc-materials.js",
+      "import": "./dist/vc-materials.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "types": "vue-tsc --declaration --emitDeclarationOnly && tsc -p ./tsconfig.json",
+    "types:watch": "vue-tsc --declaration --emitDeclarationOnly --watch & tsc -p ./tsconfig.json --watch"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "author": "webdq",
+  "license": "MIT"
+}

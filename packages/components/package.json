@@ -1,0 +1,55 @@
+{
+  "name": "@webdq/vc-components",
+  "version": "1.0.0",
+  "description": "vue cesium components",
+  "main": "./dist/vc-components.js",
+  "module": "./dist/vc-components.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/vc-components.js",
+      "import": "./dist/vc-components.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "types": "vue-tsc --declaration --emitDeclarationOnly && tsc -p ./tsconfig.json",
+    "types:watch": "vue-tsc --declaration --emitDeclarationOnly --watch & tsc -p ./tsconfig.json --watch"
+  },
+  "peerDependencies": {
+    "cesium": "^1.113.0",
+    "vue": "^3.3.0",
+    "vue-cesium": "^3.2.4"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@iconify/vue": "^4.1.1",
+    "@vueuse/core": "^10.7.1",
+    "@webdq/vc-draw-helper": "workspace:*",
+    "@webdq/vc-materials": "workspace:*",
+    "ant-design-vue": "^3.2.15",
+    "dayjs": "^1.11.10",
+    "gl-matrix": "^3.4.3",
+    "lodash-es": "^4.17.21",
+    "nanoid": "^5.0.4",
+    "vue-accessible-color-picker": "^5.0.1"
+  },
+  "keywords": [],
+  "author": "webdq",
+  "license": "MIT"
+}
