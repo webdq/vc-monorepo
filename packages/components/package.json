@@ -1,6 +1,6 @@
 {
   "name": "@webdq/vc-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "vue cesium components",
   "main": "./dist/vc-components.js",
   "module": "./dist/vc-components.mjs",
