@@ -62,6 +62,8 @@ import {
 import { CaretDownOutlined } from '@ant-design/icons-vue'
 import type { MarkIconImage } from '../graphics-attr'
 
+const AListItem = AList.Item
+
 const emit = defineEmits(['change', 'update:iconUrl'])
 const props = defineProps({
   markIconImages: {

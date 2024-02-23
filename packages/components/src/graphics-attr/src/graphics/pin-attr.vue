@@ -301,8 +301,11 @@
 import { ref, watch, type PropType } from 'vue'
 import {
   Form as AForm,
+  Row as ARow,
+  Col as ACol,
   Select as ASelect,
   InputNumber as AInputNumber,
+  Switch as ASwitch,
   Slider as ASlider
 } from 'ant-design-vue'
 import ColorPicker from '../components/color-picker.vue'
@@ -314,6 +317,7 @@ import {
 import { useAttrsChange } from '../hooks/use-attrs-change'
 import { MarkIconImage } from '../graphics-attr'
 
+const AFormItem = AForm.Item
 const ASelectOption = ASelect.Option
 
 const emit = defineEmits(['updateAttr'])

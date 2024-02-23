@@ -185,9 +185,15 @@
 
 <script setup lang="ts">
 import { ref, watch, type PropType } from 'vue'
-import { Form as AForm, InputNumber as AInputNumber } from 'ant-design-vue'
+import {
+  Form as AForm,
+  InputNumber as AInputNumber,
+  Switch as ASwitch
+} from 'ant-design-vue'
 import ColorPicker from '../components/color-picker.vue'
 import { useAttrsChange } from '../hooks/use-attrs-change'
+
+const AFormItem = AForm.Item
 
 const emit = defineEmits(['updateAttr'])
 

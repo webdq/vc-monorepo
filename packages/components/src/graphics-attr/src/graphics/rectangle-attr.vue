@@ -116,12 +116,17 @@
 import { ref, watch, type PropType } from 'vue'
 import {
   Form as AForm,
+  Row as ARow,
+  Col as ACol,
   InputNumber as AInputNumber,
+  Switch as ASwitch,
   Slider as ASlider
 } from 'ant-design-vue'
 import ColorPicker from '../components/color-picker.vue'
 import FillMaterial from '../components/fill-material.vue'
 import { useAttrsChange } from '../hooks/use-attrs-change'
+
+const AFormItem = AForm.Item
 
 const emit = defineEmits(['updateAttr'])
 

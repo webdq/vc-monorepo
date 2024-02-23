@@ -362,8 +362,12 @@ import { ref, watch, computed } from 'vue'
 import type { PropType } from 'vue'
 import {
   Form as AForm,
+  Row as ARow,
+  Col as ACol,
   Select as ASelect,
+  Input as AInput,
   InputNumber as AInputNumber,
+  Switch as ASwitch,
   Slider as ASlider
 } from 'ant-design-vue'
 import ColorPicker from './color-picker.vue'

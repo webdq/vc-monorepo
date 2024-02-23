@@ -24,6 +24,7 @@
 
 <script setup lang="ts">
 import { ref, nextTick } from 'vue'
+import { Modal as AModal } from 'ant-design-vue'
 
 const emit = defineEmits([
   'graphicsFly',

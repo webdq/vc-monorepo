@@ -103,6 +103,8 @@ import dayjs from 'dayjs'
 import { useVueCesium } from 'vue-cesium'
 import { useModel } from '../hooks/use-model'
 
+const AListItem = AList.Item
+
 const emit = defineEmits([
   'update:data',
   'saveClick',

@@ -182,7 +182,8 @@ import {
   InputNumber as AInputNumber,
   DatePicker as ADatePicker,
   List as AList,
-  Card as ACard
+  Card as ACard,
+  Switch as ASwitch
 } from 'ant-design-vue'
 import {
   CheckCircleOutlined,
@@ -200,6 +201,8 @@ import {
 import dayjs from 'dayjs'
 import { useVueCesium } from 'vue-cesium'
 import { useModel } from '../hooks/use-model'
+
+const AListItem = AList.Item
 
 const emit = defineEmits([
   'update:data',

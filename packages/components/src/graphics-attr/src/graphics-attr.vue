@@ -74,7 +74,11 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Space as ASpace, Button as AButton } from 'ant-design-vue'
+import {
+  Space as ASpace,
+  Button as AButton,
+  Tabs as ATabs
+} from 'ant-design-vue'
 import { SendOutlined, DeleteOutlined } from '@ant-design/icons-vue'
 import LabelGraphicsAttrs from './graphics/label-attr.vue'
 import PinGraphicsAttrs from './graphics/pin-attr.vue'
@@ -91,6 +95,8 @@ import MovementPath from './components/movement-path.vue'
 import { graphicsAttrProps, graphicsAttrEmits } from './graphics-attr'
 import { useTab } from './hooks/use-tab'
 import { useGraphics } from './hooks/use-graphics'
+
+const ATabPane = ATabs.TabPane
 
 const GraphicsMap = {
   label: LabelGraphicsAttrs,

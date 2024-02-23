@@ -14,7 +14,7 @@ import './style.css'
 
 const app = createApp(App)
 app.use(router)
-app.use(Antd as any)
+// app.use(Antd as any)
 app.use(VueCesium)
 app.use(VcComponents)
 app.mount('#app')

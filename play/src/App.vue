@@ -15,8 +15,12 @@
 
 <script lang="ts" setup>
 import { provide } from 'vue'
+import { Menu as AMenu } from 'ant-design-vue'
 import { useRouter } from 'vue-router'
 import { routes } from './router'
+
+const AMenuItem = AMenu.Item
+
 const router = useRouter()
 const click = ({ key }: any) => {
   router.push({ path: key })

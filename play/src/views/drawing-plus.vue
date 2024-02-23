@@ -62,8 +62,6 @@
       @graphicsFly="graphicsFly"
       @graphicsRemove="graphicsRemove"
       @updateAttr="updateAttr"
-      @previewAnimationClick="previewAnimationClick"
-      @previewMovementPathClick="previewAnimationClick"
     ></graphics-attr-modal>
 
     <div class="bar">
@@ -78,6 +76,7 @@
 
 <script setup lang="ts">
 import { ref, inject } from 'vue'
+import { Button as AButton, Textarea as ATextarea } from 'ant-design-vue'
 import GraphicsAttrModal from '../components/graphics-attr-modal.vue'
 
 const cesiumPath = inject<string>('cesiumPath')
@@ -179,10 +178,6 @@ const graphicsRemove = (drawingElId: string) => {
   console.log('graphicsRemove --> ', drawingElId)
   const drawHelper = vcDrawingPlusRef.value?.getDrawHelper()
   drawHelper?.clearById(drawingElId)
-}
-// 动画效果播放
-const previewAnimationClick = (graphics: any, entity: any, data: any) => {
-  console.log('previewAnimationClick --> ', graphics, entity, data)
 }
 </script>
 

@@ -276,6 +276,7 @@
 
 <script setup lang="ts">
 import type { PropType } from 'vue'
+import { InputNumber as AInputNumber, Switch as ASwitch } from 'ant-design-vue'
 import { useModel } from '../hooks/use-model'
 
 const emit = defineEmits([
