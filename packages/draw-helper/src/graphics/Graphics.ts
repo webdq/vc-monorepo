@@ -1173,7 +1173,7 @@ class Graphics {
   convertCartesianToDegreesArray2(cartesians: Cesium.Cartesian3[] = []) {
     const result = cartesians.map((cartesian) => {
       const { longitude, latitude } = this.convertCartesianToDegrees(cartesian)
-      return { longitude, latitude }
+      return [longitude, latitude]
     })
     return result
   }
