@@ -14,6 +14,8 @@
       </a-space>
     </div>
     <div class="ga-body">
+      <slot name="body"></slot>
+
       <a-tabs v-model:activeKey="activeKey">
         <a-tab-pane v-for="item in tabs" :key="item.value" :tab="item.label">
         </a-tab-pane>

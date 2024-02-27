@@ -17,7 +17,11 @@
         @updateAnimationData="updateAnimationData"
         @updateAnimationPlay="updateAnimationPlay"
         @removeAnimationData="removeAnimationData"
-      ></vc-graphics-attr>
+      >
+        <template #body>
+          <button>button</button>
+        </template>
+      </vc-graphics-attr>
     </div>
   </a-modal>
 </template>
