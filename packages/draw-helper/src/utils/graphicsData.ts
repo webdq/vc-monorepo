@@ -842,6 +842,20 @@ export const getMovementData = (_: any, graphics: GraphicsType) => {
   }
 }
 
+export const getProperties = (properties: any, graphics: GraphicsType) => {
+  if (!properties) return
+  const result: any = {}
+  const names = properties.propertyNames.filter(
+    (item: string) => item !== 'graphics'
+  )
+  for (let i = 0; i < names.length; i++) {
+    const name = names[i]
+    const value = getValue(properties[name])
+    result[name] = value
+  }
+  return result
+}
+
 export const getAvailability = (availability: any) => {
   if (!availability) return
   const length = availability.length
@@ -894,6 +908,7 @@ const graphicsFnMap = {
   plane: getPlane,
   polylineVolume: getPolylineVolume,
   model: getModel,
+  properties: getProperties,
   frustum: getFrustum,
   animationEffect: getAnimationEffect,
   signalLineData: getSignalLineData,

@@ -4,6 +4,7 @@ import {
   unwrapColor,
   updateModel,
   updateLabel,
+  updateProperties,
   updateAnimationEffect
 } from '../utils/graphicsUpdate'
 import {
@@ -378,6 +379,7 @@ class Model extends Graphics {
     this.setDrawingStatus(2)
     updateModel(this.entity?.model, data)
     updateLabel(this.entity?.label, data)
+    updateProperties(this.entity?.properties, data)
     updateAnimationEffect(this, data)
     if (frustum) {
       const origin = transformCartographicToCartesian(

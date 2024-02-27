@@ -147,6 +147,8 @@ const drawingMarkerDragEnd = (graphics: any) => {
 // 标绘完成
 const drawingElComplete = (graphics: any) => {
   // console.log('drawingElComplete', graphics)
+  graphics.entity.properties.addProperty('name1', 'name1')
+  graphics.entity.properties.addProperty('name2', 'name2')
 }
 // 标绘元素切换
 const drawingElChange = (graphics?: any) => {

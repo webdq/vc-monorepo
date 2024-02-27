@@ -3,6 +3,7 @@ import {
   updateRectangle,
   updatePolyline,
   updateLabel,
+  updateProperties,
   updateAnimationEffect
 } from '../utils/graphicsUpdate'
 import { transformCartographicToCartesianArray } from '../utils/graphicsValue'
@@ -187,6 +188,7 @@ class Rectangle extends Graphics {
     updateRectangle(this.entity?.rectangle, data)
     updatePolyline(this.entity?.polyline, data)
     updateLabel(this.entity?.label, data)
+    updateProperties(this.entity?.properties, data)
     updateAnimationEffect(this, data)
   }
 }

@@ -4,6 +4,7 @@ import {
   updatePolygon,
   updatePolyline,
   updateLabel,
+  updateProperties,
   updateAnimationEffect
 } from '../utils/graphicsUpdate'
 import { transformCartographicToCartesianArray } from '../utils/graphicsValue'
@@ -288,6 +289,7 @@ class TailedAttackArrow extends Graphics {
     updatePolygon(this.entity?.polygon, data)
     updatePolyline(this.entity?.polyline, data)
     updateLabel(this.entity?.label, data)
+    updateProperties(this.entity?.properties, data)
     updateAnimationEffect(this, data)
   }
 }

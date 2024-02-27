@@ -2,6 +2,7 @@ import Graphics from './Graphics'
 import {
   updateBillboard,
   updateLabel,
+  updateProperties,
   updateAnimationEffect
 } from '../utils/graphicsUpdate'
 import { transformCartographicToCartesianArray } from '../utils/graphicsValue'
@@ -135,6 +136,7 @@ class Billboard extends Graphics {
     this.setDrawingStatus(2)
     updateBillboard(this.entity?.billboard, data)
     updateLabel(this.entity?.label, data)
+    updateProperties(this.entity?.properties, data)
     updateAnimationEffect(this, data)
   }
 }

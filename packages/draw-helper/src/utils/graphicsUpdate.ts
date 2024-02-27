@@ -772,6 +772,18 @@ export const updateLabel = (label: any, data: EntityJsonData) => {
 }
 
 /**
+ * @description: 更新属性对象
+ */
+export const updateProperties = (properties: any, data: EntityJsonData) => {
+  if (!properties) return
+  if (!data.properties) return
+  const names = Object.keys(data.properties)
+  names.forEach((name) => {
+    properties.addProperty(name, data.properties[name])
+  })
+}
+
+/**
  * @description: 更新动画效果
  */
 export const updateAnimationEffect = (

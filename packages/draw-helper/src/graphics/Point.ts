@@ -2,6 +2,7 @@ import Graphics from './Graphics'
 import {
   updatePoint,
   updateLabel,
+  updateProperties,
   updateAnimationEffect
 } from '../utils/graphicsUpdate'
 import { transformCartographicToCartesianArray } from '../utils/graphicsValue'
@@ -124,6 +125,7 @@ class Point extends Graphics {
     this.setDrawingStatus(2)
     updatePoint(this.entity?.point, data)
     updateLabel(this.entity?.label, data)
+    updateProperties(this.entity?.properties, data)
     updateAnimationEffect(this, data)
   }
 }
