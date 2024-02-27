@@ -9,7 +9,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix ./",
     "dev": "pnpm build && turbo dev --filter=./packages/* --filter=./play",
     "build": "turbo build --filter=./packages/*",
-    "version": "changeset version",
+    "version": "changeset version --ignore play",
     "publish": "pnpm lint && pnpm build && changeset publish"
   },
   "lint-staged": {

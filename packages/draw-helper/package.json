@@ -1,6 +1,6 @@
 {
   "name": "@webdq/vc-draw-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cesium draw helper",
   "main": "./dist/vc-draw-helper.js",
   "module": "./dist/vc-draw-helper.mjs",

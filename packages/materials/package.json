@@ -1,6 +1,6 @@
 {
   "name": "@webdq/vc-materials",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cesium materials",
   "main": "./dist/vc-materials.js",
   "module": "./dist/vc-materials.mjs",
